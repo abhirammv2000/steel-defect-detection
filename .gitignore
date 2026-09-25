@@ -1,0 +1,13 @@
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+models/*.pt
+.ipynb_checkpoints/
+notebooks/Untitled.ipynb
+
+# large raw Kaggle data, not meant to be committed
+severstal-steel-defect-detection/train_images/
+severstal-steel-defect-detection/test_images/
+severstal-steel-defect-detection/train.csv
+severstal-steel-defect-detection/sample_submission.csv

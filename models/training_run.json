@@ -1,0 +1,47 @@
+{
+  "subset_size": 300,
+  "train_size": 255,
+  "val_size": 45,
+  "epochs": 5,
+  "batch_size": 16,
+  "lr": 0.001,
+  "resize": [
+    128,
+    800
+  ],
+  "encoder": "resnet18",
+  "total_training_seconds": 43046.1116669178,
+  "final_val_dice": 0.23508626719315848,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.366760825175865,
+      "val_dice": 0.0006309527537572043,
+      "epoch_seconds": 275.58890175819397
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.123690458840015,
+      "val_dice": 0.14014027764399847,
+      "epoch_seconds": 333.6262276172638
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.0233558402341956,
+      "val_dice": 0.3011377453804016,
+      "epoch_seconds": 206.89815092086792
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.9773479802935732,
+      "val_dice": 0.263787642121315,
+      "epoch_seconds": 206.17870020866394
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.9607585598440731,
+      "val_dice": 0.23508626719315848,
+      "epoch_seconds": 42023.80896806717
+    }
+  ]
+}
