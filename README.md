@@ -3,9 +3,8 @@
 A trained, served segmentation model for the [Severstal Steel Defect
 Detection](https://www.kaggle.com/competitions/severstal-steel-defect-detection)
 dataset. The task is pixel-level segmentation across 4 defect classes with
-RLE-encoded masks, which lines up well with a target job description's
-phrase: "computer vision technologies and techniques, especially for
-segmentation, anomaly detection, and objective grading."
+RLE-encoded masks, served with three separate outputs: segmentation, anomaly
+detection, and an objective grading score.
 
 ## What's real here, and what isn't
 
@@ -23,8 +22,7 @@ leaderboard result.
   ~12.5k images, full resolution, more epochs) would need real GPU compute,
   which this environment doesn't have. Scaling up is a config change
   (`--subset-size`, `--epochs` in `training/train.py`), not a rewrite.
-- The three capabilities from the job description phrase are all real and
-  independently testable:
+- All three capabilities are real and independently testable:
   - Segmentation: `POST /predict` returns a per-class predicted mask, as
     area coverage and confidence rather than the full-resolution mask, to
     keep responses small.

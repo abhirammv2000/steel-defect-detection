@@ -1,7 +1,6 @@
 """Inference service for the trained steel defect segmentation model.
 
-The three response fields map onto the job description's own phrasing,
-"segmentation, anomaly detection, and objective grading":
+Three response fields, each its own capability:
   - segmentation: per-class predicted mask, returned as area coverage and
     confidence rather than the full-resolution mask, to keep responses small
   - anomaly detection: defect_present, derived from whether any predicted
